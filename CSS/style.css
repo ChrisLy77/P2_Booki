@@ -40,7 +40,7 @@ nav ul {
 .pointer:hover {
     cursor: pointer;
 }
-.menu__p {
+.menu__p--font {
     font-weight: 500;
     font-size: 19px;
 }
@@ -135,7 +135,7 @@ nav ul {
     justify-content: center;
     align-items: center;
 }
-#main {
+.main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -268,32 +268,85 @@ nav ul {
     height: 100%;
     width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 .activites__card {
     border-radius: 20px;
     box-shadow: 0 5px 20px #d9d9d9;
-    height: 100%;
-    width: 22.5%;
 }
 .activites__card a {
     color: black;
     text-decoration: none;
 }
-.activites__image-1 {
-    overflow: hidden;
-    height: 440px;
-    width: ;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.activites__images {
+   object-fit: cover;
+   height: 100%;
+   width: 100%;
 }
-.activites__image-1 img {
-   
-}
-.activites__title-1 {
+.activites__title {
     display: flex;
     align-items: center;
     height: 60px;
 }
-.activites__title-1 h3 {
+.activites__title h3 {
     margin: 0 0 0 20px;
+}
+.activites__image--1 {
+    overflow: hidden;
+    height: 460px;
+    width: 350px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.activites__little-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.activites__image--2 {
+    overflow: hidden;
+    height: 230px;
+    width: 350px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.activites__image--3 {
+    overflow: hidden;
+    height: 120px;
+    width: 350px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.activites__image--4 {
+    overflow: hidden;
+    height: 170px;
+    width: 350px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.activites__image--5 {
+    overflow: hidden;
+    height: 180px;
+    width: 350px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+footer {
+    background-color: #f2f2f2;
+    margin: 0 -3.25% 0 -3.25%;
+    padding: 2% 3.25% 0 3.25%;
+    height: 250px;
+    display: flex;
+}
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+}
+.footer__link {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 4%;
 }

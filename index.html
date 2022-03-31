@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         <title>Booki...fr</title>
         <link rel="stylesheet" href="CSS/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
      
             <nav>
                 <ul>
-                    <a href="#main"><button class="nav__items pointer" type="button">Hébergements</button></a>
+                    <a href="#hebergements_anchor"><button class="nav__items pointer" type="button">Hébergements</button></a>
                     <a href="#main__activites"><button class="nav__items pointer" type="button">Activités</button></a>
                 </ul>
             </nav>
@@ -27,13 +27,13 @@
 
         <section class="menu">
             <h1 >Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p class="menu__p">En plein centre-ville ou en pleine nature</p>
+            <p class="menu__p--font">En plein centre-ville ou en pleine nature</p>
             <form class="menu__form" method="post" action=".php">
                 <em class="fa-solid fa-location-dot form__icon"></em>
                 <input type="text" name="search" class="form__input" value="Marseille, France" placeholder="Ville, Pays" />
                 <input class="form__button pointer" type="submit" value="Rechercher">
             </form> 
-                <div class="menu__filter">
+                <div id="hebergements_anchor" class="menu__filter">
                     <p class="filter__p">Filtres</p>
                     <p class="filter__items filter__p pointer"><em class="fa-solid fa-money-bill-wave filter__icon"></em>Économique</p>
                     <p class="filter__items filter__p pointer"><em class="fa-solid fa-child-reaching filter__icon"></em>Familliale</p>
@@ -42,11 +42,11 @@
                 </div>
             <div class="menu__info">
                 <em class="fa-solid fa-info"></em>
-                <p class="menu__p">Plus de 500 logements sont disponibles dans cette ville</p>
+                <p class="menu__p--font">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
 
-        <section id="main">
+        <section class="main">
             <div class="main__hebergements">
                 <h1>Hébergements à Marseille</h1>
                 <div class="hebergements__container">
@@ -174,12 +174,64 @@
                 <div class="activites__container">
                     <div class="activites__card pointer">
                         <a href="#">
-                            <div class="activites__image-1"><img src="images/activites/3_medium/1.jpg" alt="vieux port"/></div>
-                            <div class="activites__title-1"><h3>Vieux port</h3></div>  
+                            <div class="activites__image--1"><img class="activites__images" src="images/activites/3_medium/1.jpg" alt="vieux port"/></div>
+                            <div class="activites__title"><h3>Vieux port</h3></div>  
                         </a>
+                    </div>
+                    <div class="activites__little-card">
+                        <div class="activites__card pointer">
+                            <a href="#">
+                                <div class="activites__image--2"><img class="activites__images" src="images/activites/2_large/2.jpg" alt="fort"/></div>
+                                <div class="activites__title"><h3>Fort de Pomègues</h3></div>
+                            </a>
+                        </div>
+                        <div class="activites__card pointer">
+                            <a href="#">
+                                <div class="activites__image--3"><img class="activites__images" src="images/activites/3_medium/3.jpg" alt="îles"/></div>
+                                <div class="activites__title"><h3>Îles du Frioul</h3></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="activites__card pointer">
+                        <a href="#">
+                            <div class="activites__image--1"><img class="activites__images" src="images/activites/3_medium/4.jpg" alt="parc national"/></div>
+                            <div class="activites__title"><h3>Parc National des Calanques</h3></div>  
+                        </a>
+                    </div>
+                    <div class="activites__little-card">
+                        <div class="activites__card pointer">
+                            <a href="#">
+                                <div class="activites__image--4"><img class="activites__images" src="images/activites/2_large/5.jpg" alt="notre-dame"/></div>
+                                <div class="activites__title"><h3>Notre-Dame-de-la-Garde</h3></div>
+                            </a>
+                        </div>
+                        <div class="activites__card pointer">
+                            <a href="#">
+                                <div class="activites__image--5"><img class="activites__images" src="images/activites/2_large/6.jpg" alt="parc"/></div>
+                                <div class="activites__title"><h3>Parc Longchamp</h3></div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="footer__container">
+                <h2>A propos</h2>
+                <a href="#" class="footer__link">Fonctionnement du site</a>
+                <a href="#" class="footer__link">Conditions générales de vente</a>
+                <a href="#" class="footer__link">Données et confidentialité</a>
+            </div>
+            <div class="footer__container">
+                <h2>Nos hébergements</h2>
+                <a href="#" class="footer__link">Charte qualité</a>
+                <a href="#" class="footer__link">Soumettre votre hôtel</a>
+            </div>
+            <div class="footer__container">
+                <h2>Assistance</h2>
+                <a href="#" class="footer__link">Centre d'aide</a>
+                <a href="#" class="footer__link">Nous contacter</a>
+            </div>
+        </footer>
     </body>
 </html>
