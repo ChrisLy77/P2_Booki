@@ -235,7 +235,7 @@ nav {
 }
 .card__image-left {
     overflow: hidden;
-    width: 40%;
+    width: 149px;
     height: 149px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -245,9 +245,8 @@ nav {
 }
 .card__image-left img {
     height: 100%;
-}
-.card__image-left .zoom {
-    height: 150%;
+    width: 100%;
+    object-fit: cover;
 }
 .right-side__title h3 {
     margin: 7px 0 0 8px;
