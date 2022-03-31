@@ -3,7 +3,8 @@
     box-sizing: border-box;
 }
 body {
-    margin: 0 3.25% 0 3.25%;
+    margin: 0 55px 0 55px;
+    max-width: 1581px;
 }
 header {
     display: flex; 
@@ -25,7 +26,7 @@ nav {
     list-style: none;
     margin: 0px; padding: 0px;
 }
-nav a {
+.no-link {
     color: black;
     text-decoration: none;
 }
@@ -91,6 +92,7 @@ nav a {
 .menu__filter {
     display: flex;
     margin-top: 15px;
+    flex-wrap: wrap;
 }
 .filter__p {
     display: flex;
@@ -151,8 +153,9 @@ nav a {
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 20px 45px 20px 45px;
-    width: 66%;
-    height: 700px;
+    width: 1043px;
+    min-height: 700px;
+    max-height: 2000px;
 }
 .hebergements__container {
     display: flex;
@@ -167,11 +170,6 @@ nav a {
     border-radius: 25px;
     padding: 8px;
     margin-bottom: 40px;
-}
-.container__card a {
-    color: black;
-    text-decoration: none;
-
 }
 .card__image {
     overflow: hidden;
@@ -203,8 +201,6 @@ nav a {
 }
 .main__a {
     font-size: 20px;
-    color: black;
-    text-decoration: none;
 }
 .main__a h3 {
     margin-top: 10px;
@@ -212,7 +208,7 @@ nav a {
 .main__populaire {
     background-color: #f2f2f2;
     border-radius: 20px;
-    width: 31%;
+    width: 490px;
     height: 700px;
     padding: 20px 45px 20px 45px;
 }
@@ -235,8 +231,6 @@ nav a {
     margin-bottom: 40px;
 }
 .populaire__card a{
-    color: black;
-    text-decoration: none;
     display: flex;
 }
 .card__image-left {
@@ -272,18 +266,16 @@ nav a {
     height: 100%;
 }
 .activites__container {
-    height: 100%;
+    min-height: 520px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .activites__card {
+    height: 520px;
     border-radius: 20px;
     box-shadow: 0 5px 20px #d9d9d9;
-}
-.activites__card a {
-    color: black;
-    text-decoration: none;
 }
 .activites__images {
    object-fit: cover;
@@ -310,12 +302,22 @@ nav a {
     flex-direction: column;
     justify-content: space-between;
 }
+.activites__little-card--2 {
+    height: 290px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #d9d9d9;
+}
 .activites__image--2 {
     overflow: hidden;
     height: 230px;
     width: 350px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+.activites__little-card--3 {
+    height: 180px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #d9d9d9;
 }
 .activites__image--3 {
     overflow: hidden;
@@ -324,12 +326,22 @@ nav a {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+.activites__little-card--4 {
+    height: 230px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #d9d9d9;
+}
 .activites__image--4 {
     overflow: hidden;
     height: 170px;
     width: 350px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+.activites__little-card--5 {
+    height: 240px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #d9d9d9;
 }
 .activites__image--5 {
     overflow: hidden;
@@ -340,8 +352,8 @@ nav a {
 }
 footer {
     background-color: #f2f2f2;
-    margin: 0 -3.25% 0 -3.25%;
-    padding: 2% 3.25% 0 3.25%;
+    margin: 0 -55px 0 -55px;
+    padding: 31.5px 55px 0 55px;
     height: 250px;
     display: flex;
 }
@@ -351,9 +363,13 @@ footer {
     width: 550px;
 }
 .footer__link {
-    color: black;
-    text-decoration: none;
     font-weight: 500;
     font-size: 17px;
     margin-bottom: 4%;
+}
+@media screen and (min-width:1691px) {
+    html {
+        display: flex;
+        justify-content: center;
+    }
 }
