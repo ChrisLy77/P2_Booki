@@ -164,7 +164,6 @@ nav {
 }
 .container__card {
     width: 31%;
-    min-width: 231px;
     height: 225px;
     background-color: white;
     box-shadow: 0 5px 20px #d9d9d9;
