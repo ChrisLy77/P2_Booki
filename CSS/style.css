@@ -13,12 +13,11 @@ header {
     background-color: white;
 }
 .header__link {
-    width: 0;
-    height: 0;
+    height: 100px;
 }
 .header__logo {
     height: 55px;
-    margin: 30px 50px 30px 10px;
+    margin: 30px 10px 30px 10px;
 }
 nav {
     display: flex; 
@@ -155,7 +154,6 @@ nav {
     margin-right: 5px;
     width: 65%;
     min-height: 700px;
-    max-height: 2000px;
 }
 .hebergements__container {
     display: flex;
@@ -418,11 +416,17 @@ footer {
     }
     .hebergements__side {
         width: 90%;
+        order: -1;
+        margin-bottom: 40px;
     }
     .container__card {
         height: 300px;
     }
     .card__image {
         height: 70%;
+    }
+    footer {
+        flex-wrap: wrap;
+        height: auto;
     }
 }
