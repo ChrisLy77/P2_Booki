@@ -40,10 +40,6 @@ nav a {
     margin: 20px 30px 20px 0px;
     zoom: 0.8;
 }
-.filter__items:hover {
-    zoom: 0.9;
-    margin: 14px 3px 15px 3px;
-}
 .hebergements {
     margin: 0 -55px 0 -55px;
 }
@@ -113,10 +109,6 @@ footer {
     }
     .filter__items {
         border: 3px solid #d9d9d9;
-    }
-    .filter__items:hover {
-        zoom: 0.85;
-        margin: 17px 14px 17px 0px;
     }
     .filter__icon {
         margin: 0 25px 0 -3px;

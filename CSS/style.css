@@ -128,8 +128,7 @@ nav {
     margin: 0 25px 0 0;
 }
 .filter__items:hover {
-    zoom: 1.1;
-    margin: 15px 0px 16px 0px; 
+    transform: scale(1.1); 
 }
 .menu__info {
     display: flex;
