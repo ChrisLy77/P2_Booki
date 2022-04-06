@@ -19,12 +19,29 @@ nav a {
     border-bottom: 3.5px solid #0065FC;
     border-top: none;
 }
-.filter__p {
+.form__button {
+    display: none;
+}
+.form__input {
+    width: 81%;
+}
+.form__mobile-button {
+    display: initial;
+    width: 65px;
+    border-radius: 18px;
+    margin-left: -18px;
+}
+.filters {
     width: 100%;
 }
 .filter__items {
     width: auto;
     margin: 20px 30px 20px 0px;
+    zoom: 0.8;
+}
+.filter__items:hover {
+    zoom: 0.9;
+    margin: 14px 3px 15px 3px;
 }
 .hebergements {
     margin: 0 -55px 0 -55px;
@@ -36,10 +53,10 @@ nav a {
     height: auto;
 }
 .populaire__card {
-    height: 165px;
+    height: 190px;
 }
 .card__image-left {
-    height: 149px;
+    height: 174px;
 }
 .hebergements__main {
     background-color: white;
@@ -89,3 +106,29 @@ footer {
     flex-wrap: wrap;
     height: auto;
 }
+@media screen and (max-width:560px) {
+    html {
+    zoom: 0.9;
+    }
+    .filter__items {
+        border: 3px solid #d9d9d9;
+    }
+    .filter__items:hover {
+        zoom: 0.85;
+        margin: 17px 14px 17px 0px;
+    }
+    .filter__icon {
+        margin: 0 25px 0 -3px;
+    }
+}
+@media screen and (max-width:470px) {
+    html {
+    zoom: 0.8;
+    }
+}
+@media screen and (max-width:415px) {
+    html {
+    zoom: 0.7;
+    }
+}
+

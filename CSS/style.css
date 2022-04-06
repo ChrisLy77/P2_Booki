@@ -11,13 +11,14 @@ header {
     justify-content: space-between;
     position: sticky; top: 0;
     background-color: white;
+    margin: 0 -55px 0 -55px;
 }
 .header__link {
     height: 100px;
 }
 .header__logo {
     height: 55px;
-    margin: 30px 10px 30px 10px;
+    margin: 30px 10px 30px 50px;
 }
 nav {
     display: flex; 
@@ -57,7 +58,7 @@ nav {
 .form__icon {
     background-color: #f2f2f2;
     font-size: 22px;
-    width: 65px;
+    min-width: 65px;
     height: 60px;
     --fa-display: flex;
     justify-content: center;
@@ -66,7 +67,7 @@ nav {
     border-bottom-left-radius: 18px;    
 }
 .form__input {
-    border: 1.5px solid #f2f2f2;
+    border: 2px solid #f2f2f2;
     height: 60px;
     width: 270px;
     padding-left: 20px;
@@ -87,6 +88,9 @@ nav {
     margin-left: -4px;
     font-size: 21px;
     font-weight: 700;
+}
+.form__mobile-button {
+    display: none;
 }
 .menu__filter {
     display: flex;
@@ -124,7 +128,8 @@ nav {
     margin: 0 25px 0 0;
 }
 .filter__items:hover {
-    transform: scale(1.1);
+    zoom: 1.1;
+    margin: 15px 0px 16px 0px; 
 }
 .menu__info {
     display: flex;
@@ -132,7 +137,7 @@ nav {
 }
 .fa-info {
     height: 30px;
-    width: 30px;
+    min-width: 30px;
     color: #0065FC;
     border: 1.5px solid #d9d9d9;
     border-radius: 50%;
@@ -238,7 +243,7 @@ nav {
 }
 .card__image-left {
     overflow: hidden;
-    width: 160px;
+    width: 40%;
     height: 149px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
