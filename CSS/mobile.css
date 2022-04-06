@@ -5,6 +5,7 @@ header {
 }
 .header__logo {
     height: 70px;
+    margin: 30px 10px 30px 30px;
 }
 nav {
     width: 100%;
