@@ -29,8 +29,10 @@ nav a {
 .form__mobile-button {
     display: initial;
     width: 65px;
+    height: 62px;
     border-radius: 18px;
     margin-left: -18px;
+    margin-top: -1px;
 }
 .filters {
     width: 100%;
