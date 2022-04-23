@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
+    <!--L'élément <head> est la partie invisible de la page qui fournit des informations (metadonnées) sur le document HTML-->
+    <head> 
+        <!--Balise <meta> pour l'encodage des caractères à destination des navigateurs-->
         <meta charset="utf-8" />
+        
+        <!--Balise <meta> pour donner des instructions relatives à la taille et à l’échelle du viewport aux navigateurs mobiles pour un affichage optimale des éléments-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Booki.fr</title>
+        
+        <!--Balise <link> pour charger la feuille de style CSS-->
+        <link rel="stylesheet" href="CSS/normalize.css" />
+
+        <!--Balise <link> pour charger la feuille de style CSS-->
         <link rel="stylesheet" href="CSS/style.css" />
+        
+        <!--Balise media queries pour modifier l'apparence d'un site ou d'une application en fonction du type d'appareil et de ses caractéristiques-->
         <link rel="stylesheet" media="screen and (max-width: 768px)" href="CSS/mobile.css" />
+        
+        <!--//Les balises suivantes servent à importer la police d'écriture et les icônes depuis des sites tiers//-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/2a705460d9.js" crossorigin="anonymous"></script>
+        <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
     </head>
-    
+    <!--L'élément <body> représente le contenue principal du document HTML-->
     <body>
+        <!--L'en-tête de la plage-->
         <header>
+            <!--Logo cliquable pour revenir à l'accueil-->
             <a href="https://chrisly77.github.io/P2_Booki/" class="header__link "><img class="header__logo" src="images/logo/Booki@3x.png" alt="logo"/></a> 
-     
+            
+            <!--Menu de navigation avec des balises <a> qui sont des liens cliquables vers les différentes parties de la page-->
             <nav>
-                <a class="no-link" href="#top"><div class="nav__items ">Hébergements</div></a>
+                <a class="no-link" href="#hebergements__anchor"><div class="nav__items ">Hébergements</div></a>
                     <a class="no-link" href="#activites__anchor"><div class="nav__items ">Activités</div></a>
             </nav>
-
         </header>
+        <!--La balise <main> repésente le contenue majoritaire de notre page qui sont les sections "Menu", "Hébergements" et "Activités"-->
         <main>
+            <!--Section "Menu" contient le formulaire de recherche et les filtres-->
             <section class="menu">
                 <h1 >Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="menu__p--font">En plein centre-ville ou en pleine nature</p>
+                
+                <!--Balise <form> représente un formulaire qui contient un champ de saisie (<input> de type "text"() et un boutton de validation (<input> de type "submit")-->
+                <!--PS: L'icone est inclue dans la balise <form> pour qu'il soit aligné et collé au formulaire sans utiliser la propriété CSS: -display: flex; -->
                 <form class="menu__form" method="post" action=".php">
                     <em class="fa-solid fa-location-dot form__icon"></em>
+                    <!--Balise <input> est interactif et permet à l'utilisateur de saisir des données-->
                     <input type="text" name="search" class="form__input" value="Marseille, France" placeholder="Ville, Pays" />
                     <input type="submit" value="Rechercher" class="form__button pointer"/>
                     <button type="submit" class="form__button form__mobile-button pointer" ><em class="fa-solid fa-magnifying-glass"></em></button>
@@ -37,14 +59,14 @@
                         <a class="no-link" href="#"><p class="filter__items filter__p"><em class="fa-solid fa-money-bill-wave filter__icon"></em>Économique</p></a>
                         <a class="no-link" href="#"><p class="filter__items filter__p"><em class="fa-solid fa-child-reaching filter__icon"></em>Familliale</p></a>
                         <a class="no-link" href="#"><p class="filter__items filter__p"><em class="fa-solid fa-heart filter__icon"></em>Romantique</p></a>
-                        <a class="no-link" href="#"><p class="filter__items filter__p"><em class="fa-solid fa-dog filter__icon"></em>Animaux autorisés</p></a>
+                        <!--Exemple de filtre sous forme de lien cliquable avec un attribut: id="hebergements__anchor" qui sert de point d'ancre à la partie Hébergements-->
+                        <a id="hebergements__anchor" class="no-link" href="#"><p class="filter__items filter__p"><em class="fa-solid fa-dog filter__icon"></em>Animaux autorisés</p></a>
                     </div>
                 <div class="menu__info">
                     <em class="fa-solid fa-info"></em>
                     <p class="menu__p--font">Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
-    
             <section class="hebergements">
                 <div class="hebergements__main">
                     <h1>Hébergements à Marseille</h1>
@@ -146,7 +168,7 @@
                             <div class="card__image-left"><img src="images/hebergements/4_small/8.jpg" alt="au coeur de l'eau"/></div>
                             <div class="card__right-side">
                                 <div class="right-side__title-price">
-                                    <h3>Au cœur de l'eau<br>Chambres d'hôtes<br></h3>
+                                    <h3>Au cœur de l'eau Chambres d'hôtes</h3>
                                     <p>Nuit à partir de 71<strong>€</strong></p>
                                 </div>    
                                 <div class="right-side__rate"><em class="fa-solid fa-star"></em><em class="fa-solid fa-star"></em><em class="fa-solid fa-star"></em><em class="fa-solid fa-star"></em><em class="fa-solid fa-star star-fade"></em></div>
