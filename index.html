@@ -2,14 +2,14 @@
 <html lang="fr">
     <!--L'élément <head> est la partie invisible de la page qui fournit des informations (metadonnées) sur le document HTML-->
     <head> 
-        <!--Balise <meta> pour l'encodage des caractères à destination des navigateurs-->
+        <!--Balise <meta> pour définir l'encodage des caractères à destination des navigateurs-->
         <meta charset="utf-8" />
         
         <!--Balise <meta> pour donner des instructions relatives à la taille et à l’échelle du viewport aux navigateurs mobiles pour un affichage optimale des éléments-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Booki.fr</title>
         
-        <!--Balise <link> pour charger la feuille de style CSS-->
+        <!--Balise <link> pour charger la feuille de normalisation du CSS-->
         <link rel="stylesheet" href="CSS/normalize.css" />
 
         <!--Balise <link> pour charger la feuille de style CSS-->
@@ -32,7 +32,7 @@
             <!--Logo cliquable pour revenir à l'accueil-->
             <a href="https://chrisly77.github.io/P2_Booki/" class="header__link "><img class="header__logo" src="images/logo/Booki@3x.png" alt="logo"/></a> 
             
-            <!--Menu de navigation avec des balises <a> qui sont des liens cliquables vers les différentes parties de la page-->
+            <!--Menu de navigation avec des balises <a> qui sont des liens html vers les différentes parties de la page-->
             <nav>
                 <a class="no-link" href="#hebergements__anchor"><div class="nav__items ">Hébergements</div></a>
                     <a class="no-link" href="#activites__anchor"><div class="nav__items ">Activités</div></a>
@@ -52,16 +52,17 @@
                     <!--Balise <input> est interactif et permet à l'utilisateur de saisir des données-->
                     <input type="text" name="search" class="form__input" value="Marseille, France" placeholder="Ville, Pays" />
                     <input type="submit" value="Rechercher" class="form__button pointer"/>
+                    <!--balise <button> pour utiliser l'icone "loupe" comme boutton de recherche sur la version mobile-->
                     <button type="submit" class="form__button form__mobile-button pointer" ><em class="fa-solid fa-magnifying-glass"></em></button>
                 </form> 
-                    <div class="menu__filter">
-                        <p class="filter__p filters">Filtres</p>
-                        <a class="no-link" href="#"><p class="filter__items filter__p"><em class="fa-solid fa-money-bill-wave filter__icon"></em>Économique</p></a>
-                        <a class="no-link" href="#"><p class="filter__items filter__p"><em class="fa-solid fa-child-reaching filter__icon"></em>Familliale</p></a>
-                        <a class="no-link" href="#"><p class="filter__items filter__p"><em class="fa-solid fa-heart filter__icon"></em>Romantique</p></a>
-                        <!--Exemple de filtre sous forme de lien cliquable avec un attribut: id="hebergements__anchor" qui sert de point d'ancre à la partie Hébergements-->
-                        <a id="hebergements__anchor" class="no-link" href="#"><p class="filter__items filter__p"><em class="fa-solid fa-dog filter__icon"></em>Animaux autorisés</p></a>
-                    </div>
+                <div class="menu__filter">
+                    <p class="filter__p filters">Filtres</p>
+                    <a class="no-link" href="#"><p class="filter__items filter__p"><em class="fa-solid fa-money-bill-wave filter__icon"></em>Économique</p></a>
+                    <a class="no-link" href="#"><p class="filter__items filter__p"><em class="fa-solid fa-child-reaching filter__icon"></em>Familliale</p></a>
+                    <a class="no-link" href="#"><p class="filter__items filter__p"><em class="fa-solid fa-heart filter__icon"></em>Romantique</p></a>
+                    <!--Exemple de filtre sous forme de lien cliquable avec un attribut: id="hebergements__anchor" qui sert de point d'ancre à la partie Hébergements-->
+                    <a id="hebergements__anchor" class="no-link" href="#"><p class="filter__items filter__p"><em class="fa-solid fa-dog filter__icon"></em>Animaux autorisés</p></a>
+                </div>
                 <div class="menu__info">
                     <em class="fa-solid fa-info"></em>
                     <p class="menu__p--font">Plus de 500 logements sont disponibles dans cette ville</p>
@@ -71,7 +72,9 @@
                 <div class="hebergements__main">
                     <h1>Hébergements à Marseille</h1>
                     <div class="hebergements__container">
-                        <div class="container__card ">
+                        <!--Exemple d 'une carte d'hébergement du site-->
+                        <div class="container__card">
+                            <!--Pour que la carte soit cliquable dans son intégralité, tous les éléments de la carte sont englobés dans un lien html-->
                             <a class="no-link" href="#">
                                 <div class="card__image"><img src="images/hebergements/4_small/1.jpg" alt="auberge la cannebiere"/></div>
                                 <div class="card__body">
@@ -83,7 +86,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="container__card ">
+                        <div class="container__card">
                             <a class="no-link" href="#">
                                 <div class="card__image"><img src="images/hebergements/4_small/2.jpg" alt="hotel du port"/></div>
                                 <div class="card__body">
@@ -95,7 +98,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="container__card ">
+                        <div class="container__card">
                             <a class="no-link" href="#">
                                 <div class="card__image"><img src="images/hebergements/4_small/3.jpg" alt="hotel les mouettes"/></div>
                                 <div class="card__body">
@@ -107,7 +110,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="container__card ">
+                        <div class="container__card">
                             <a class="no-link" href="#">
                                 <div class="card__image"><img src="images/hebergements/4_small/4.jpg" alt="hotel de la mer"/></div>
                                 <div class="card__body">
@@ -119,7 +122,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="container__card ">
+                        <div class="container__card">
                             <a class="no-link" href="#">
                                 <div class="card__image"><img src="images/hebergements/4_small/5.jpg" alt="auberge le panier"/></div>
                                 <div class="card__body">
@@ -131,7 +134,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="container__card ">
+                        <div class="container__card">
                             <a class="no-link" href="#">
                                 <div class="card__image"><img src="images/hebergements/4_small/6.jpg" alt="hotel chez amina"/></div>
                                 <div class="card__body">
@@ -202,13 +205,13 @@
                         <div class="activites__little-card--2 ">
                             <a class="no-link" href="#">
                                 <div class="activites__image--2"><img class="activites__images" src="images/activites/2_large/2.jpg" alt="fort"/></div>
-                                <div class="activites__title"><h3>Fort de Pomègues</h3></div>
+                                <div class="activites__title activites__title--2"><h3>Fort de Pomègues</h3></div>
                             </a>
                         </div>
                         <div class="activites__little-card--3 ">
                             <a class="no-link" href="#">
                                 <div class="activites__image--3"><img class="activites__images" src="images/activites/3_medium/3.jpg" alt="îles"/></div>
-                                <div class="activites__title"><h3>Îles du Frioul</h3></div>
+                                <div class="activites__title activites__title--3"><h3>Îles du Frioul</h3></div>
                             </a>
                         </div>
                     </div>
@@ -222,19 +225,20 @@
                         <div class="activites__little-card--4 ">
                             <a class="no-link" href="#">
                                 <div class="activites__image--4"><img class="activites__images" src="images/activites/2_large/5.jpg" alt="notre-dame"/></div>
-                                <div class="activites__title"><h3>Notre-Dame-de-la-Garde</h3></div>
+                                <div class="activites__title activites__title--4"><h3>Notre-Dame-de-la-Garde</h3></div>
                             </a>
                         </div>
                         <div class="activites__little-card--5 ">
                             <a class="no-link" href="#">
                                 <div class="activites__image--5"><img class="activites__images" src="images/activites/2_large/6.jpg" alt="parc"/></div>
-                                <div class="activites__title"><h3>Parc Longchamp</h3></div>
+                                <div class="activites__title activites__title--5"><h3>Parc Longchamp</h3></div>
                             </a>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
+        <!--L'élément <footer> représente le pied de la page et on y insère généralement les informations et liens utiles de la page web-->
         <footer>
             <div class="footer__container">
                 <h2>A propos</h2>
