@@ -273,6 +273,7 @@ nav {
     width: 100%;
 }
 .activites__container {
+    min-height: 520px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -294,8 +295,8 @@ nav {
     align-items: center;
     height: 60px;
 }
-.activites__container h3 {
-    margin: 0 20px 0 20px;
+.activites__title h3 {
+    margin: 0 0 0 20px;
 }
 .activites__image--1 {
     overflow: hidden;
@@ -376,97 +377,7 @@ footer {
         justify-content: center;
     }
 }
-@media screen and (min-width: 992px) {
-    .activites__card {
-        height: 63vh;
-        width: 22%;
-        border-radius: 20px;
-        box-shadow: 0 5px 20px #d9d9d9;
-    }
-    .activites__title {
-        display: flex;
-        align-items: center;
-        height: 12%;
-    }
-    .activites__image--1 {
-        overflow: hidden;
-        height: 88%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    .activites__little-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 22%;
-        height: 63vh;
-    }
-    .activites__little-card--2 {
-        height: 55.5%;
-        border-radius: 20px;
-        box-shadow: 0 5px 20px #d9d9d9;
-    }
-    .activites__image--2 {
-        overflow: hidden;
-        height: 79.3%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    .activites__title--2 {
-        display: flex;
-        align-items: center;
-        height: 20.7%;
-    }
-    .activites__little-card--3 {
-        height: 34.4%;
-        border-radius: 20px;
-        box-shadow: 0 5px 20px #d9d9d9;
-    }
-    .activites__image--3 {
-        overflow: hidden;
-        height: 66.7%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    .activites__title--3 {
-        display: flex;
-        align-items: center;
-        height: 33.3%;
-    }
-    .activites__little-card--4 {
-        height: 44%;
-        border-radius: 20px;
-        box-shadow: 0 5px 20px #d9d9d9;
-    }
-    .activites__image--4 {
-        overflow: hidden;
-        height: 74%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    .activites__title--4 {
-        display: flex;
-        align-items: center;
-        height: 26%;
-    }
-    .activites__little-card--5 {
-        height: 46%;
-        border-radius: 20px;
-        box-shadow: 0 5px 20px #d9d9d9;
-    }
-    .activites__image--5 {
-        overflow: hidden;
-        height:75%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    .activites__title--5 {
-        display: flex;
-        align-items: center;
-        height: 25%;
-    }
-}
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1540px) {
     .activites__card {
         width: 48%;
         margin-bottom: 4%;
